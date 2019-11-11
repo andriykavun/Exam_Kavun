@@ -69,7 +69,11 @@ void Choise(int variant, int hight)
 }
 int main()
 {
-	
+	int variant = 0;
+	int hight = 0;
+	Choise(variant, hight);
+	system("pause");
+	return 0;
 	system("pause");
 	return 0;
 }
