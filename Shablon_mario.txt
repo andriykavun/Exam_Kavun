@@ -37,7 +37,7 @@ void PrintDoublePiramid(int height)//подвійна піраміда
 		cout << endl;
 	}
 }
-void Choise(int variant, int hight)
+void Choise(int variant, int hight)//вибір користувача
 {
 	cout << "Enter variant of piramid\n";
 	cin >> variant;
@@ -69,7 +69,7 @@ void Choise(int variant, int hight)
 }
 int main()
 {
-	int variant = 0;
+	int variant = 0;//ініціалізація
 	int hight = 0;
 	Choise(variant, hight);
 	system("pause");
