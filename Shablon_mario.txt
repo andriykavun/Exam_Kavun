@@ -37,6 +37,36 @@ void PrintDoublePiramid(int height)//подвійна піраміда
 		cout << endl;
 	}
 }
+void Choise(int variant, int hight)
+{
+	cout << "Enter variant of piramid\n";
+	cin >> variant;
+	cout << "Enter hight of piramid\n";
+	cin >> hight;
+	while (true)
+	{
+		if (variant == 1)
+		{
+			PrintSinglePiramid(hight);
+			break;
+		}
+		else if (variant == 0)
+		{
+			PrintDoublePiramid(hight);
+			break;
+		}
+
+		else if (variant != 1 && variant != 0 && isdigit(hight) == 0)
+		{
+			cout << "Uncorectly parametrs!\n";
+			cout << endl;
+			cout << "Enter variant of piramid\n";
+			cin >> variant;
+			cout << "Enter hight of piramid\n";
+			cin >> hight;
+		}
+	}
+}
 int main()
 {
 	
